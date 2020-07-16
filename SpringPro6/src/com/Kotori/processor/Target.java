@@ -1,8 +1,7 @@
-package com.Kotori.BeanProcessor;
+package com.Kotori.processor;
 
 import org.springframework.stereotype.Component;
 
-@Component
 public class Target {
     private String TargetName;
 
