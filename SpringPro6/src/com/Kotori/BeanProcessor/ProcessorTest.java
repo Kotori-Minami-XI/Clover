@@ -1,16 +1,16 @@
-package com.Kotori;
+package com.Kotori.BeanProcessor;
 
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-
-public class TestAOP {
+public class ProcessorTest {
     @Test
-    public void test(){
+    public void testPostBeanProcessorBeforeInstantiation() {
         ClassPathXmlApplicationContext applicationContext =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
-        GoodsDao dao = (GoodsDao)applicationContext.getBean("GoodsDao");
 
-        dao.save();
+        Target bean = (Target)applicationContext.getBean(Target.class);
+        bean.f();
+        System.out.println(bean);
     }
 }

@@ -8,8 +8,8 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+    <context:component-scan base-package="com.Kotori"></context:component-scan>
+
     <aop:aspectj-autoproxy/>
-    <bean id="GoodsDao" class="com.Kotori.GoodsDao"></bean>
-    <bean id="MyAspect" class="com.Kotori.MyAspect"></bean>
 
 </beans>

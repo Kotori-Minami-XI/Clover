@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccfe4493-5688-42af-a37f-3629c6df07f1" name="Default Changelist" comment="" />
+    <list default="true" id="ccfe4493-5688-42af-a37f-3629c6df07f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Kotori/BeanProcessor/KAwareBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Kotori/BeanProcessor/ProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Kotori/BeanProcessor/Target.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Kotori/GoodsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Kotori/MyAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Kotori/TestAOP.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1afjT3GcSdsLlSWJaI41jOU7Kgz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -18,12 +40,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -32,17 +56,33 @@
       <recent name="C:\Users\54356\Desktop\Java\SpringPro6\web\WEB-INF\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestAOP.test">
+  <component name="RunManager" selected="JUnit.ProcessorTest.testPostBeanProcessorBeforeInstantiation">
+    <configuration name="ProcessorTest.testPostBeanProcessorBeforeInstantiation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringPro6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Kotori.BeanProcessor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Kotori.BeanProcessor" />
+      <option name="MAIN_CLASS_NAME" value="com.Kotori.BeanProcessor.ProcessorTest" />
+      <option name="METHOD_NAME" value="testPostBeanProcessorBeforeInstantiation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestAOP.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringPro6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Kotori.*" />
+          <option name="PATTERN" value="com.Kotori.aop.BeanProcessor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.Kotori" />
-      <option name="MAIN_CLASS_NAME" value="com.Kotori.TestAOP" />
+      <option name="PACKAGE_NAME" value="com.Kotori.aop" />
+      <option name="MAIN_CLASS_NAME" value="com.Kotori.aop.TestAOP" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -72,6 +112,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProcessorTest.testPostBeanProcessorBeforeInstantiation" />
         <item itemvalue="JUnit.TestAOP.test" />
       </list>
     </recent_temporary>
@@ -88,6 +129,7 @@
       <updated>1587133546196</updated>
       <workItem from="1587133548682" duration="3002000" />
       <workItem from="1587140056100" duration="125000" />
+      <workItem from="1594887435760" duration="2748000" />
     </task>
     <servers />
   </component>
@@ -95,29 +137,46 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="488" y="47" width="531" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1594890282735">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="47" width="531" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1594890282735" />
     <state x="634" y="260" key="FileChooserDialogImpl" timestamp="1587133594150">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="634" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587133594150" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1587140005013">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1594890332984">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594890332984" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587140005013" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1587140005013">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1594890332983">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594890332983" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587140005013" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1587140005013">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1594890332983">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594890332983" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587140005013" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1587140005013">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1594890332984">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594890332984" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587140005013" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1587133598180">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="313" y="0" key="SettingsEditor" timestamp="1594887599560">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="313" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594887599560" />
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587133598180" />
+    <state x="107" y="57" key="new project wizard" timestamp="1594887599018">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="107" y="57" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1594887599018" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594890277548">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594890277548" />
   </component>
 </project>
