@@ -8,9 +8,5 @@ public class ProcessorTest {
     public void testPostBeanProcessorBeforeInstantiation() {
         ClassPathXmlApplicationContext applicationContext =
                 new ClassPathXmlApplicationContext("applicationContext1.xml");
-
-        Target bean = (Target)applicationContext.getBean(Target.class);
-        bean.f();
-        System.out.println(bean);
     }
 }

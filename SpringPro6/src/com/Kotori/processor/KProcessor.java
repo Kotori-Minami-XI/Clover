@@ -4,7 +4,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor;
 import org.springframework.stereotype.Component;
 
-public class KAwareBeanPostProcessor implements InstantiationAwareBeanPostProcessor {
+public class KProcessor implements InstantiationAwareBeanPostProcessor {
     @Override
     public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) throws BeansException {
         System.out.println(beanName+"实例化-before");
@@ -14,7 +14,7 @@ public class KAwareBeanPostProcessor implements InstantiationAwareBeanPostProces
     @Override
     public boolean postProcessAfterInstantiation(Object bean, String beanName) throws BeansException {
         System.out.println(beanName+"实例化-after");
-        return false;
+        return true;
     }
 
     @Override
