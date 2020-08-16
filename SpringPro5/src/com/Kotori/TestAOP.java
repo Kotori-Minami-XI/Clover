@@ -11,8 +11,8 @@ public class TestAOP {
                 new ClassPathXmlApplicationContext("applicationContext.xml");
         GoodsDao dao = (GoodsDao)applicationContext.getBean("GoodsDao");
         //dao.save();
-        dao.update();
+        //dao.update();
         //dao.delete();
-        //dao.find();
+        dao.find();
     }
 }

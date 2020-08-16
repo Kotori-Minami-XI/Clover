@@ -1,32 +1,34 @@
 package com.Kotori.test;
 
-import com.Kotori.service.UserService;
-import com.Kotori.service.UserServiceImpl;
+import com.Kotori.controller.UserController;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+
+/***
+ *  测试Spring的注解注入
+ */
 public class UserTest {
 
     /***
-     * 传统的dao方法
+     * 当UserService接口有两个以上实现，则必须要指定，有以下两种方法
+     * 1.
+     *     @Autowired
+     *     @Qualifier("userServiceImpl1")
+     *
+     * 2.
+     *     @Resource (type = com.Kotori.service.UserServiceImpl2.class)
+     *
+     * 3.
+     *     @Resource (name = "userServiceImpl2")
      */
     @Test
     public void test1(){
-        UserService service = new UserServiceImpl();
-        service.delete();
-    }
-
-    /***
-     * 通过spring
-     */
-    @Test
-    public void test2(){
-        ClassPathXmlApplicationContext applicationContext =
+        ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
-        UserService service = (UserService)applicationContext.getBean("UserService");
-        service.delete();
+
+        UserController userController = (UserController)context.getBean("userController");
+        userController.deleteUser();
     }
-
-
 
 }

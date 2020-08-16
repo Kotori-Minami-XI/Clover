@@ -1,5 +1,10 @@
 package com.Kotori.dao;
 
-public interface UserDao {
-    public void delete();
+import org.springframework.stereotype.Component;
+
+@Component("UserDao")
+public class UserDao {
+    public void delete() {
+        System.out.println("delete");
+    }
 }
