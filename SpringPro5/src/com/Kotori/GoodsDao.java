@@ -2,7 +2,6 @@ package com.Kotori;
 
 import org.springframework.stereotype.Component;
 
-//@Component("GoodsDao")
 public class GoodsDao {
     public void save(){
         System.out.println("GoodsDao-save");
@@ -10,6 +9,7 @@ public class GoodsDao {
 
     public String update(){
         System.out.println("GoodsDao-update");
+        int i=1/0;// Error
         return "GoodsDao-update-done";
     }
 
